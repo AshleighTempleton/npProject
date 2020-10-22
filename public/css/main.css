@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(226, 250, 243);
+}
+
+.outerContainer {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.jumbotron {
+  background-image: url("../images/sample.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topStories {
+}
+
+footer {
+  background-color: #7fa9e0;
+  padding: 50px;
+  margin-top: 50px;
+}
