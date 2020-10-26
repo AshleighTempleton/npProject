@@ -1,28 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>About Us</title>
+<?php require_once "../app/view/inc/header.php" ?>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <!-- FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/d9b3bd9a2e.js" crossorigin="anonymous"></script>
+<div class="outerContainer container-fluid">
 
-    <!-- Project CSS -->
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/footer.css">
-</head>
-
-<body>
+        <header>
 
             <!-- NAV -->
-            <?php require_once "./nav.php" ?>
+            <?php require_once "../app/view/inc/nav.php" ?>
+
+
+            </header>
+
+            </div>
+
+            <h1 class="display-4 font-italic"><?php echo $data['title']; ?></h1>
+
 
 
 
