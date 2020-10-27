@@ -21,11 +21,7 @@
                         efficiently about what’s most interesting in this post’s contents.</p>
                     <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
                 
-                <ul>
-                    <?php foreach($data['posts'] as $post) : ?>
-                        <li><?php echo $post->title; ?></li>
-                    <?php endforeach; ?>
-                </ul>
+
                 
                 </div>
             </div>
