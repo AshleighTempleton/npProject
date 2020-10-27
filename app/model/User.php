@@ -8,9 +8,29 @@ class User {
         $this->db = new Database;
     }
 
+    // Register user
+    public function register($data){
+        $this->db->query('INSERT INTO users (userName, email, password)
+         VALUES(:userName, :email, :password)');  
+         // bind values 
+        $this->db->bind(':userName', $data['userName']);
+        $this->db->bind(':email', $data['email']);
+        $this->db->bind(':password', $data['password']);
+
+        // execute 
+        if($this->db->execute()){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+
     // find user by email
     public function findUserByEmail($email){
         $this->db->query('SELECT * FROM users WHERE email = :email');
+        // bind value
         $this->db->bind(':email', $email);
 
         // gives the data
