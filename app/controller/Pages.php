@@ -24,6 +24,13 @@ class Pages extends Controller{
         
     }
 
+
+    public function test(){
+        $data = ['title' => 'test'];
+        $this->view('pages/test', $data);
+        
+    }
+
     // add more methods for each page
     // pay attention to the file path
 }

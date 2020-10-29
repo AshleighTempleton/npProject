@@ -26,6 +26,9 @@
                 </div>
             </div>
 
+            <?php require_once "../app/view/inc/weather.php" ?>
+
+
 
             <!-- TOP STORIES -->
 
@@ -81,6 +84,8 @@
 
 
             <br><br><br><br><br><br>
+
+
 
 
             <h1>TOP STORIES</h1>
