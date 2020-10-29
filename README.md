@@ -36,12 +36,14 @@ The project is planned as follows:
 5. Establish database and create database tables in PHPMyAdmin
 6. Establish PHP connection to database and any related settings
 7. Code User registration and login
-8. Code Newsletter
-9. Integrate weather API with homepage
-10. Code article pages & integrate with home pages
-11. 
-12. Complete static pages
-13. Complete front end design
+8. Integrate weather API with homepage
+9. Code Newsletter  - CURRENT TASK
+10. Lost password recovery
+11. Account settings - change details
+12. Code article pages & integrate with home pages
+13. Lost password recovery
+14. Complete static pages
+15. Complete front end design
 
 ### Preliminary 
 
@@ -65,7 +67,8 @@ As a base in which to begin to code, a basic homepage was created:
 ### APIs
 
 - [OWl Carousel](https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html)
-- weather API
+- [Weather API](https://openweathermap.org/)
+  - [Open Weather tutorial](https://phppot.com/php/forecast-weather-using-openweathermap-with-php/) 
 
 
 ### Hosting
