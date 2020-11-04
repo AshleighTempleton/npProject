@@ -1,70 +1,19 @@
-<?php require_once '../app/config/weather.php' ?>
 
 
-<!doctype html>
-<html>
-<head>
-<title>Forecast Weather using OpenWeatherMap with PHP</title>
 
-<!-- <style>
-body {
-    font-family: Arial;
-    font-size: 0.95em;
-    color: #929292;
-}
-
-.report-container {
-    border: #E0E0E0 1px solid;
-    padding: 20px 40px 40px 40px;
-    border-radius: 2px;
-    width: 550px;
-    margin: 0 auto;
-}
-
-.weather-icon {
-    vertical-align: middle;
-    margin-right: 20px;
-}
-
-.weather-forecast {
-    color: #212121;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 20px 0px;
-}
-
-span.min-temperature {
-    margin-left: 15px;
-    color: #929292;
-}
-
-.time {
-    line-height: 25px;
-} -->
-<!-- </style> -->
-
-</head>
-<body>
-
-    <div class="report-container">
-        <h2><?php echo $data->name; ?> Weather Status</h2>
-        <div class="time">
-            <div><?php echo date("l g:i a", $currentTime); ?></div>
-            <div><?php echo date("jS F, Y",$currentTime); ?></div>
-            <div><?php echo ucwords($data->weather[0]->description); ?></div>
-        </div>
-        <div class="weather-forecast">
-            <img
-                src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png"
-                class="weather-icon" /> <?php echo $data->main->temp_max; ?>&deg;C<span
-                class="min-temperature"><?php echo $data->main->temp_min; ?>&deg;C</span>
-        </div>
-        <div class="time">
-            <div>Humidity: <?php echo $data->main->humidity; ?> %</div>
-            <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
-        </div>
-    </div>
+<form action="<?php echo URLROOT; ?>pages/test" method="POST">
+<input type="email" name="mail" 
+                                class="form-control form-control-lg <?php echo (!empty($data['mail_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['mail']; ?>"
+                                 >
+                                <span class="invalid-feedback"><?php echo $data['mail_err']; ?></span>
+<button type="submit">submit</button>
+</form>
 
 
-</body>
-</html>
+                                <!-- catflix -->
+                                <!-- <div class="form-group usernameSi">
+                                            <input class="form-control mb-3" type="text" name="email" placeholder="jdoe@gmail.com" required pattern="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$">        
+                                            <div class="invalid-feedback">Oops, this doesn't look like an email to me</div>
+                                        </div> -->
+
+                                        <input type="email" name="newsletter" class="form-control <?php echo (!empty($data['email_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['newsletter']; ?>">

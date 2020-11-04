@@ -16,4 +16,4 @@ define('URLROOT', 'http://localhost/npProject');
 
 // site name
 // to be updated with name
-define('SITENAME', 'NewsPortal');
+define('SITENAME', 'No Lollygagging');

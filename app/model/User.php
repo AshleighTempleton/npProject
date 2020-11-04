@@ -61,4 +61,43 @@ class User {
 
     }
 
+    public function newsletter($data){
+
+        // ADDED FOR TESTING
+        $newsletter = $_POST['email'];
+        
+        $this->db->query('INSERT INTO newsletter (email)
+         VALUES(:email)');  
+         // bind values 
+        $this->db->bind(':email', $data['email']);
+
+        // execute 
+        if($this->db->execute()){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+
+    // find user by email
+    public function findSubByEmail($email){
+        $this->db->query('SELECT * FROM newsletter WHERE email = :email');
+        // bind value
+        $this->db->bind(':email', $email);
+
+        // gives the data
+        $row = $this->db->single();
+
+        // check row
+        if($this->db->rowCount() > 0){
+            return true;
+        } else {
+            return false;
+        }
+
+
+    }
+
 }

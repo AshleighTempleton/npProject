@@ -31,6 +31,12 @@ class Pages extends Controller{
         
     }
 
+    // public function newsletter(){
+    //     $data = ['title' => 'newsletter'];
+    //     $this->view('newsletters/newsletter', $data);
+        
+    // }
+
     // add more methods for each page
     // pay attention to the file path
 }
