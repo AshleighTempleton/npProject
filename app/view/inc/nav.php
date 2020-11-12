@@ -1,6 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-      <a class="navbar-brand" href="<?php echo URLROOT; ?>"><?php echo SITENAME; ?></a>
+    <!-- <img src="<?php echo URLROOT; ?>/images/logo.png" alt="site logo"> -->
+      <a class="navbar-brand" href="<?php echo URLROOT; ?>"><i class="fas fa-dragon"></i> <?php echo SITENAME; ?></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -16,10 +17,16 @@
           <li class="nav-item">
             <a class="nav-link" href="<?php echo URLROOT; ?>/users/newsletter">Newsletter</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo URLROOT; ?>/users/forum">Forum <i class="fab fa-rocketchat"></i></a>
+          </li>
         </ul>
         
         <ul class="navbar-nav ml-auto">
           <?php if(isset($_SESSION['user_id'])) : ?>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Welcome <?php echo $_SESSION['user_userName']; ?></a>
+            </li>
           <li class="nav-item">
               <a class="nav-link" href="<?php echo URLROOT; ?>/users/logout">Logout</a>
             </li>

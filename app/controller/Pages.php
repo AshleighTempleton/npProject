@@ -7,7 +7,13 @@ class Pages extends Controller{
     }
 
     public function index(){
-        
+        // add session condition & redirect
+        // if(isset($_SESSION['user_id']))
+        // else redirect to login
+
+        if(!isLoggedIn()){
+            redirect('users/login');
+        }
         
         $data = [
             'title' => 'welcome'

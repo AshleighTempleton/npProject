@@ -11,8 +11,8 @@
         <div class="weather-forecast">
             <img
                 src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png"
-                class="weather-icon" /> <?php echo $data->main->temp_max; ?>&deg;C<span
-                class="min-temperature"><?php echo $data->main->temp_min; ?>&deg;C</span>
+                class="weather-icon" /> High: <?php echo $data->main->temp_max; ?>&deg;C<span
+                class="min-temperature"> Low: <?php echo $data->main->temp_min; ?>&deg;C</span>
         </div>
         <div class="time">
             <div>Humidity: <?php echo $data->main->humidity; ?> %</div>

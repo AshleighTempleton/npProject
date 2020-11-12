@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/vendors/owl/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/vendors/owl/dist/assets/owl.theme.default.min.css"> 
 
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
    
     <!-- <link rel="stylesheet" href="./css/nav.css"> -->
     <!-- <link rel="stylesheet" href="./css/footer.css"> -->

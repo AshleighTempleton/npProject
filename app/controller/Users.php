@@ -192,13 +192,80 @@ class Users extends Controller{
 
     }
 
-    public function isLoggedIn(){
-        if(isset($_SESSION['user_id'])){
-            return true;
-        } else {
-            return false;
-        }
+
+
+    public function pwRecovery(){
+
+                // check for POST
+                if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                    // process form
+        
+                    // Sanitize POST data
+                    $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+        
+        
+                    $data =[             
+                        'email' => trim($_POST['email']),      
+                        'email_err' => ''
+                    ];
+        
+        
+                        // check if email is empty
+                        if(empty($data['email'])){ 
+                            $data['email_err'] = 'Please enter email';
+                        } else {
+                            //check email
+                            if(!$this->userModel->findUserByEmail($data['email'])){
+                                
+                                $data['email_err'] = 'No email found';
+                            }
+                        }
+
+                        // ensure errors are empty
+                if(empty($data['email_err'])){
+                    // validated
+
+                // Enter email in db and send recovery email
+                if($this->userModel->pwRecovery($data)){
+                    // code to send email
+                    // flash('register_success', 'You have been registered');
+                    redirect('users/login');
+                } else {
+                    die('Something went wrong :(');
+                }
+                    
+                } else {
+                    // load view with errors
+                    $this->view('users/pwRecovery', $data);
+                }
+
+        $this->view('users/pwRecovery', $data);
+            }
+            else {
+                // init data
+                // keeps data there if form reset
+                $data =[
+    
+                    'email' => '',
+    
+                    'email_err' => '',
+    
+                ];
+    
+    
+            $this->view('users/pwRecovery', $data);
+            }
+}
+
+
+    public function pwReset($data){
+
+
+
+        $this->view('users/pwReset', $data);
     }
+
+
 
 
     public function newsletter(){
@@ -236,10 +303,7 @@ class Users extends Controller{
                 if(empty($data['email_err'])){
                     // validated
 
-                    // Hash password
-                // $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
-
-                // register user
+                // register subscriber
                 if($this->userModel->newsletter($data)){
                     // flash('register_success', 'You have been registered');
                     redirect('users/newsletter');
