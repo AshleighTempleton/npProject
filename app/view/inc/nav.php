@@ -9,16 +9,13 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo URLROOT; ?>">Home</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="<?php echo URLROOT; ?>/pages/about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<?php echo URLROOT; ?>/users/newsletter">Newsletter</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo URLROOT; ?>/users/forum">Forum <i class="fab fa-rocketchat"></i></a>
+            <a class="nav-link" href="<?php echo URLROOT; ?>/posts">Forum <i class="fab fa-rocketchat"></i></a>
           </li>
         </ul>
         

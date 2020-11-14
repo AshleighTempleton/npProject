@@ -1,32 +1,39 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: rgb(182, 204, 236);
+  background-image: url("../images/alduin.jpg");
+  /* background-color: rgb(182, 204, 236); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   font-family: "Amarante", cursive;
 }
 
+body.fade {
+  opacity: 0;
+  transition: none;
+}
+
 .outerContainer {
-  /* padding-left: 8rem;
-  padding-right: 8rem; */
+  padding: 0px;
 }
 
 .jumbotron {
-  background-image: url("../images/alduin.jpg");
+  background-image: url("../images/controller.jpeg");
   background-position: center;
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
+  border-radius: 0px;
+  height: 100vh;
 }
-
-/* .topStories {
-  
-} */
 
 footer {
   background-color: #7fa9e0;
   padding: 50px;
   margin-top: 50px;
-}
-
-.col-md-4 {
-  border: red solid 1px;
 }
 
 /* WEATHER API */
@@ -41,6 +48,8 @@ footer {
 }
 
 .weather-icon {
+  width: 7rem;
+  height: auto;
 }
 
 p {
@@ -57,20 +66,22 @@ p {
 .main-card {
   border-radius: 2rem;
   box-shadow: grey 3px 3px 5px;
-  background-image: url("../images/sample.jpg");
+  background-image: url("../images/console.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  /* width: 55rem;
-  height: 25rem; */
+  height: 100%;
 }
 
 .top-stories {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30rem;
+  height: 28rem;
   width: 23rem;
   border-radius: 2rem;
-  box-shadow: grey 3px 3px 5px;
+  box-shadow: rgb(17, 17, 17) 3px 3px 5px;
 }
 
 .mass {
@@ -83,6 +94,30 @@ p {
 
 .yakuza {
   background-image: url("../images/yakuza.jpg");
+}
+
+.radeon {
+  background-image: url("../images/radeon.jpg");
+}
+
+.watchDogs {
+  background-image: url("../images/watchdogs.jpg");
+}
+
+.witcher {
+  background-image: url("../images/geralt.png");
+}
+
+.souls {
+  background-image: url("../images/souls.jpg");
+}
+
+.zombie {
+  background-image: url("../images/zombie.jpg");
+}
+
+.solas {
+  background-image: url("../images/solas.jpg");
 }
 
 .card-body {
