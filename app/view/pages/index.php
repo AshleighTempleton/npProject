@@ -4,26 +4,28 @@
 
         <header>
 
-            <!-- NAV -->
-            <?php require_once "../app/view/inc/nav.php" ?>
-            
+
+
             <!-- Jumbotron -->
 
-            <div class="jumbotron text-white bg-dark">
-                <div class="col-md-6 px-0">
-                <!-- delete approot later -->
-                <?php echo URLROOT; ?>
-                    <h1 class="display-4 font-italic"><?php echo $data['title']; ?></h1>
-                    <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and
-                        efficiently about what’s most interesting in this post’s contents.</p>
-                    <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
-                </div>
+
+            <div class="jumbotron text-white bg-dark jumboText">
+                    <div class="jumboText">
+                        <h1 class=""><?php echo $data['title']; ?></h1>
+                        <p class="lead">"Do you get to the cloud district very often? What am I saying... Of course you don't."</p>
+                        <p class="lead"><a href="#nav">
+                            <i class="far fa-arrow-alt-circle-down"></i> Continue the adventure <i class="far fa-arrow-alt-circle-down">
+                            </a></i></p>
+                    </div>
             </div>
+                                        <!-- NAV -->
+                                        <?php require_once "../app/view/inc/nav.php" ?>
         </header>
 
-    <div class="outerContainer container-fluid">
+    <!-- <div class="outerContainer container-fluid"> -->
 
-        <div class="row">
+
+        <div class="row" id="main">
             <div class="col-12 col-lg-8 d-flex justify-content-center align-items-center">
                     <div class="card main-card">
                         <div class="card-body">
@@ -44,15 +46,13 @@
                 <!-- </div> -->
             </div>
             <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
+                
                 <?php require_once "../app/view/inc/weather.php" ?>
             </div>
-        </div>
 
 
 
             <!-- TOP STORIES -->
-
-            <h1>The latest news...</h1>
 
             <!-- <div class="topStories row"> -->
                 <!-- ONE -->
@@ -92,10 +92,7 @@
                 </div>
 
 
-            </div> -->
 
-
-<!-- 
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="row">
@@ -148,7 +145,7 @@
             </div> -->
 
 
-            <div class="owl-carousel">
+            <div class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="card top-stories mass">
                         <!-- <img src="images/me.jpg" class="card-img-top" alt="..."> -->
@@ -240,14 +237,10 @@
                     </div>
                 </div>
             </div>
-
-
-            </div>
+    </div>
 
             <!-- FOOTER -->
             <?php require_once "../app/view/inc/footer.php" ?>
-
-
 
 
 

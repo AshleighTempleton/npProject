@@ -16,7 +16,7 @@ class Pages extends Controller{
         }
         
         $data = [
-            'title' => 'welcome'
+            'title' => 'The Latest in Gaming News'
             
             ];
         

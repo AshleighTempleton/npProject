@@ -1,13 +1,13 @@
 <?php require_once "../app/view/inc/header.php" ?>
-<?php require_once "../app/view/inc/nav.php" ?>
-
 
 <div class="row">
-    <div class="col-md-6 mx-auto">
-      <div class="card card-body bg-light mt-5">
+    <div class="col-md-6 m-auto">
+      <div class="card card-body forum my-5">
       <?php flash('register_success'); ?>
-        <h2>Login</h2>
-        <p>Enter your credentials to go to the cloud district</p>
+      <div class="my-3 mx-5">
+
+        <h2 class="text-center">Login</h2>
+        <p class="text-center">Hey you, you're finally awake!</p>
         <form action="<?php echo URLROOT; ?>/users/login" method="post">
           <div class="form-group">
             <label for="email">Email: <sup>*</sup></label>
@@ -20,50 +20,24 @@
             <span class="invalid-feedback"><?php echo $data['password_err']; ?></span>
           </div>
 
-          <div class="row">
-            <div class="col">
-              <input type="submit" value="Login" class="btn btn-success btn-block">
+          <div class="row pt-3">
+            <div class="col-md-6 p-1">
+              <input type="submit" value="Login" class="btn btn-success w-100">
             </div>
-            <div class="col">
-              <a href="<?php echo URLROOT; ?>/users/register" class="btn btn-light btn-block">No account? Register here!</a>
+            <div class="col-md-6 p-1">
+              <a href="<?php echo URLROOT; ?>/users/register" class="btn btn-info w-100">Register</a>
             </div>
           </div>
           <div class="row">
-            <div class="col">
-              <a href="<?php echo URLROOT; ?>/users/pwRecovery">Forgot your password?</a>
+            <div class="col p-2">
+              <a href="<?php echo URLROOT; ?>/users/pwRecovery" class="mt-2 text-light">Forgot your password?</a>
             </div>
           </div>
         </form>
+        </div>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php require_once "../app/view/inc/footer.php" ?>
 
 </body>
 </html>

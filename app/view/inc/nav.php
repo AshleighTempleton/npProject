@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark" id="nav">
   <div class="container">
     <!-- <img src="<?php echo URLROOT; ?>/images/logo.png" alt="site logo"> -->
       <a class="navbar-brand" href="<?php echo URLROOT; ?>"><i class="fas fa-dragon"></i> <?php echo SITENAME; ?></a>
@@ -22,7 +22,7 @@
         <ul class="navbar-nav ml-auto">
           <?php if(isset($_SESSION['user_id'])) : ?>
             <li class="nav-item">
-              <a class="nav-link" href="#">Welcome <?php echo $_SESSION['user_userName']; ?></a>
+              <a class="nav-link pr-3" href="#">Welcome <?php echo $_SESSION['user_userName']; ?></a>
             </li>
           <li class="nav-item">
               <a class="nav-link" href="<?php echo URLROOT; ?>/users/logout">Logout</a>

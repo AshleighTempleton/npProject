@@ -1,10 +1,11 @@
 <?php require_once "../app/view/inc/header.php" ?>
-<?php require_once "../app/view/inc/nav.php" ?>
+
 
 
 <div class="row">
-    <div class="col-md-6 mx-auto">
-      <div class="card card-body bg-light mt-5">
+    <div class="col-md-6 m-auto">
+      <div class="card card-body forum my-4">
+        <div class="m-5">
         <h2>Take an arrow to the knee</h2>
         <p>Surrender your details to register</p>
         <form action="<?php echo URLROOT; ?>/users/register" method="POST">
@@ -30,44 +31,18 @@
           </div>
 
           <div class="row">
-            <div class="col">
-              <input type="submit" value="Register" class="btn btn-success btn-block">
+            <div class="col-md-6 p-1 mt-2">
+              <input type="submit" value="Register" class="btn btn-success w-100">
             </div>
-            <div class="col">
-              <a href="<?php echo URLROOT; ?>/users/login" class="btn btn-light btn-block">Have an account? Login</a>
+            <div class="col-md-6 p-1 mt-2">
+              <a href="<?php echo URLROOT; ?>/users/login" class="btn btn-info w-100">Have an account? Login</a>
             </div>
           </div>
         </form>
+        </div>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php require_once "../app/view/inc/footer.php" ?>
 
 </body>
 </html>
