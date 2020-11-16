@@ -10,10 +10,9 @@ The news portal is a BeCode consolidation project to bring together front and ba
 #### Site
 
 - Live weather 
-- Registration, login and account modification system with password recovery by email
+- Registration, login 
+- Forum
 - Newsletter subscription
-
-
 
 
 #### Code
@@ -22,7 +21,14 @@ The news portal is a BeCode consolidation project to bring together front and ba
 - secure forms
 
 
-### 
+### Future features
+
+- Password recovery
+- Account management
+- News database
+- Search news
+- Add about us page
+- Add contact form & db
 
 
 ## Timeline
@@ -37,11 +43,11 @@ The project is planned as follows:
 6. Establish PHP connection to database and any related settings
 7. Code User registration and login
 8. Integrate weather API with homepage
-9. Code Newsletter  - CURRENT TASK
-10. Lost password recovery
-11. Account settings - change details
+9. Code Newsletter  
+10. Lost password recovery ** POSTPONED
+11. Account settings - change details ** POSTPONED
 12. Code article pages & integrate with home pages
-13. Lost password recovery
+13. Forum CRUD
 14. Complete static pages
 15. Complete front end design
 
@@ -57,11 +63,15 @@ As a base in which to begin to code, a basic homepage was created:
 
 ### Languages 
 
+- html
+- css with bootstrap
+- PHP OOP MVC
 
 
 ### Frameworks
 
 - [Bootstrap 4](https://getbootstrap.com/)
+- Traversy MVC framework
 
 
 ### APIs
@@ -73,7 +83,7 @@ As a base in which to begin to code, a basic homepage was created:
 
 ### Hosting
 
-
+- The site will be deployed with Heroku
 
 ## Reources
 
