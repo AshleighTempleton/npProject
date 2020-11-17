@@ -30,7 +30,7 @@
           </div>
           <div class="row">
             <div class="col p-2">
-              <a href="<?php echo URLROOT; ?>/users/pwRecovery" class="mt-2 text-light">Forgot your password?</a>
+              <a href="<?php echo URLROOT; ?>/users/request" class="mt-2 text-light">Forgot your password?</a>
             </div>
           </div>
         </form>

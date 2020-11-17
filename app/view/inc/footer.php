@@ -1,5 +1,5 @@
  <!-- FOOTER -->
- <footer class="footer">
+ <footer class="page-footer">
 	<!-- <div class="container-fluid d-flex justify-content-center align-items-cente"> -->
 	<div class="row">
 			<div class="col-12 col-md-4 d-flex justify-content-center align-items-center">

@@ -6,9 +6,9 @@
 <?php require_once "../app/view/inc/nav.php" ?>
 
   <div class="container">
-        <div class="card forum card-body mt-4">
+        <div class="card forum card-body my-5">
           <h2 class="text-center">Create new post</h2>
-          <form action="<?php echo URLROOT; ?>/posts/add" method="post" class="mb-5 mx-5 mt-2">
+          <form action="<?php echo URLROOT; ?>/posts/add" method="post" class="mb-2 mx-5 mt-2">
             <div class="form-group">
               <label for="title">Title: <sup>*</sup></label>
               <input type="text" name="title" class="form-control form-control-lg <?php echo (!empty($data['title_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['title']; ?>">
