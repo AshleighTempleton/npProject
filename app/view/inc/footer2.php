@@ -1,83 +1,57 @@
-<!-- Footer -->
-<footer class="page-footer font-small blue pt-4">
+<!-- FOOTER -->
+<footer class="page-footer position-absolute">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+				<div class="justify-content-center text-center">
 
-  <!-- Footer Links -->
-  <div class="container-fluid text-center text-md-left">
+					<p class="footerP">Get the latest news</p>
+					<a href="<?php echo URLROOT; ?>/users/newsletter" class="footerA">Join our newsletter! <i
+							class="fas fa-scroll"></i></a>
+				</div>
+			</div>
+			<div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+				<div class="justify-content-center text-center">
 
-    <!-- Grid row -->
-    <div class="row">
+					<span>
+						<i class="social fab fa-facebook"></i>
+					</span>
+					<span><i class="social fab fa-twitter"></i></span>
+					<span><i class="social fab fa-twitch"></i></span>
+					<span><i class="social fab fa-playstation"></i></span>
+					<span><i class="social fab fa-steam"></i></span>
 
-      <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
+				</div>
+			</div>
 
-        <!-- Content -->
-        <h5 class="text-uppercase">Footer Content</h5>
-        <p>Here you can use rows and columns to organize your footer content.</p>
+			<div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+				<div class="justify-content-center text-center">
+					<p class="footerP">© AT Enterprises <i class="fas fa-laptop-code"></i></p>
+					<a href="https://github.com/AshleighTempleton" class="footerA">See more coding! <i
+							class="fab fa-github"></i></a>
+				</div>
+			</div>
+		</div>
 
-      </div>
-      <!-- Grid column -->
+	</div>
 
-      <hr class="clearfix w-100 d-md-none pb-3">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase">Links</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">Link 1</a>
-          </li>
-          <li>
-            <a href="#!">Link 2</a>
-          </li>
-          <li>
-            <a href="#!">Link 3</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase">Links</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">Link 1</a>
-          </li>
-          <li>
-            <a href="#!">Link 2</a>
-          </li>
-          <li>
-            <a href="#!">Link 3</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-  </div>
-  <!-- Copyright -->
 
 </footer>
-<!-- Footer -->
+
+
+    <!-- BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+

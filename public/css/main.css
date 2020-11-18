@@ -315,14 +315,6 @@ footer {
   background-color: rgba(17, 17, 17, 0.9);
 }
 
-footer {
-  background-color: black;
-  bottom: 0;
-  padding-top: 2em;
-  width: 100%;
-  z-index: 2;
-}
-
 .footerA {
   font-size: 1.3rem;
   text-decoration: none;
