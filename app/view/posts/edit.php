@@ -1,12 +1,7 @@
 
-
-
-
 <?php require_once "../app/view/inc/header.php" ?>
 <?php require_once "../app/view/inc/nav.php" ?>
 
-
-    
   <div class="container">
       <div class="card forum card-body mt-4">
         <form action="<?php echo URLROOT; ?>/posts/edit/<?php echo $data['id'] ?>" method="post" class="mb-5 mx-5 mt-2">
@@ -31,13 +26,7 @@
           </div>
         </form>
       </div>
-</div>
-
-
-
-
+  </div>
 
 <?php require_once "../app/view/inc/footer.php" ?>
 
-</body>
-</html>

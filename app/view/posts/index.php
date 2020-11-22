@@ -34,6 +34,5 @@
 
 <?php require_once "../app/view/inc/footer.php" ?>
 
-</body>
-</html>
+
 

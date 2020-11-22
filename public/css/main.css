@@ -3,29 +3,20 @@ html {
   height: 100vh;
   margin: 0;
   padding: 0;
-  /* overflow: scroll; */
 }
 
 body {
   margin: 0;
   padding: 0;
   background-image: url("../images/horizon.jpg");
-  /* background-color: rgb(182, 204, 236); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   font-family: "Noto Sans JP", sans-serif;
-  /* font-family: "Amarante", cursive; */
   height: 100vh;
+  position: relative;
 }
-
-body.fade {
-  opacity: 0;
-  transition: none;
-}
-
-/* navbar */
 
 .navbar {
   background-color: rgba(17, 17, 17, 1);
@@ -93,6 +84,10 @@ body.fade {
 
 /*  main page container */
 
+.userContainer {
+  height: 100vh;
+}
+
 .outerContainer {
   padding: 0px;
   padding-bottom: 10rem;
@@ -100,6 +95,10 @@ body.fade {
   overflow: hidden;
   display: block;
   position: relative;
+}
+
+.contentContainer {
+  height: 63vh;
 }
 
 .row {
@@ -113,19 +112,16 @@ body.fade {
 h1 {
   font-weight: bold;
   font-family: "Amarante", cursive;
-  /* padding: 3rem; */
 }
 
 h2 {
   font-weight: bold;
   font-family: "Amarante", cursive;
-  /* padding: 3rem; */
 }
 
 h3 {
   font-weight: bold;
   font-family: "Amarante", cursive;
-  /* padding: 3rem; */
 }
 
 /* WEATHER API */
@@ -201,10 +197,6 @@ h3 {
 .owl-carousel.owl-drag .owl-item {
   margin: 0;
 }
-
-/* .item {
-  width: auto;
-} */
 
 .top-stories {
   background-position: center;
@@ -304,15 +296,14 @@ h5 {
 
 /* footer */
 
-footer {
-  /* position: absolute; */
+.page-footer {
   padding: 50px;
   margin-top: 2rem;
   bottom: 0;
-  /* height: 12rem; */
   width: 100%;
   color: rgb(182, 180, 180);
   background-color: rgba(17, 17, 17, 0.9);
+  display: block;
 }
 
 .footerA {
@@ -339,14 +330,6 @@ footer {
 }
 
 /*  cloud animation  */
-
-/* #clouds {
-  padding: 100px 0;
-  background: #c9dbe9;
-  background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
-  background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
-  background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
-} */
 
 /*Time to finalise the cloud shape*/
 .cloud {

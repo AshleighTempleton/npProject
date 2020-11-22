@@ -2,7 +2,6 @@
 
 
 <footer class="page-footer">
-	<div class="container-fluid">
 		<div class="row">
 			<div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
 				<div class="justify-content-center text-center">
@@ -34,7 +33,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
 </footer>
 
 

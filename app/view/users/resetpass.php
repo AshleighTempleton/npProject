@@ -1,7 +1,7 @@
 <?php require_once "../app/view/inc/header.php" ?>
-<div class="row">
+<div class="userContainer d-flex justify-content-center align-items-center">
     <div class="col-md-6 mx-auto">
-      <div class="card card-body forum mt-5">
+      <div class="card card-body forum">
       <div class="mb-5 mx-5 mt-2 ">
         <?php flash('register_success'); ?>
         <h2 class="text-center">Reset your password</h2>
@@ -33,7 +33,7 @@
           </div>
         </form>
       </div>
-        </div>
+      </div>
     </div>
     </div>
   </div>

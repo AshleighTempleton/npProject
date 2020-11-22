@@ -1,8 +1,7 @@
 <?php require_once "../app/view/inc/header.php" ?>
 
 
-
-<div class="row">
+<div class="userContainer d-flex justify-content-center align-items-center">
     <div class="col-md-6 m-auto">
       <div class="card card-body forum my-4">
         <div class="m-5">
@@ -32,7 +31,7 @@
 
           <div class="row">
             <div class="col-md-6 p-1 mt-2">
-              <input type="submit" value="Register" class="btn btn-success w-100">
+              <input type="submit" value="Submit" class="btn btn-success w-100">
             </div>
             <div class="col-md-6 p-1 mt-2">
               <a href="<?php echo URLROOT; ?>/users/login" class="btn btn-info w-100">Have an account? Login</a>

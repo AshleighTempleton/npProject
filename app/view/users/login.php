@@ -1,6 +1,6 @@
 <?php require_once "../app/view/inc/header.php" ?>
 
-<div class="row">
+<div class="userContainer d-flex justify-content-center align-items-center">
     <div class="col-md-6 m-auto">
       <div class="card card-body forum my-5">
       <?php flash('register_success'); ?>
@@ -37,6 +37,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 
 </body>
